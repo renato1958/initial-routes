@@ -12,6 +12,17 @@ export default {
   components: {
     NavigationBar,
   },
+  mounted() {
+    setTimeout(() => {
+      this.$router.push({
+        name: "contact",
+        params: {
+          name: "Renato Felisi",
+          age: 62,
+        },
+      });
+    }, 5000);
+  },
 };
 </script>
 
